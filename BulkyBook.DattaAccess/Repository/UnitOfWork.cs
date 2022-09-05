@@ -19,11 +19,13 @@ namespace BulkyBook.DattaAccess.Repository
             Category = new CategoryRepository(_db);
             CoverType = new CoverTypeRepository(_db);
             Articulo = new ArticuloRepository(_db);
+            Company = new CompanyRepository(_db);
         }
 
         public ICategoryRepository Category { get; private set; }
         public ICoverTypeRepository CoverType { get; private set; }
         public IArticuloRepository Articulo { get; private set; }
+        public ICompanyRepository Company { get; private set; }
 
         public void Save()
         {

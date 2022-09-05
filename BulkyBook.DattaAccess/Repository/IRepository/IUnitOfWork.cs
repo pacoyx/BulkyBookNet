@@ -11,6 +11,7 @@ namespace BulkyBook.DattaAccess.Repository.IRepository
         ICategoryRepository Category { get; }
         ICoverTypeRepository CoverType{ get; }
         IArticuloRepository Articulo { get; }
+        ICompanyRepository Company { get; }
         void Save();
     }
 }
